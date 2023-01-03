@@ -71,6 +71,7 @@ def main(input_filepath, output_filepath):
     torch.save(test_std, join(output_filepath, "test_data.tensor"))
     torch.save(train_label, join(output_filepath, "train_labels.tensor"))
     torch.save(test_label, join(output_filepath, "test_labels.tensor"))
+    logger.info("saved data")
 
 
 if __name__ == "__main__":
