@@ -1,0 +1,7 @@
+[2023-01-04 15:02:44,877][__main__][INFO] - Start training VAE...
+[2023-01-04 15:04:53,632][__main__][INFO] - 	Epoch 1 complete! 	Average Loss: 137.549045104471
+[2023-01-04 15:07:02,969][__main__][INFO] - 	Epoch 2 complete! 	Average Loss: 100.4328300096515
+[2023-01-04 15:09:11,487][__main__][INFO] - 	Epoch 3 complete! 	Average Loss: 95.22700656693448
+[2023-01-04 15:11:20,758][__main__][INFO] - 	Epoch 4 complete! 	Average Loss: 92.51344676022538
+[2023-01-04 15:13:30,398][__main__][INFO] - 	Epoch 5 complete! 	Average Loss: 90.71219283115087
+[2023-01-04 15:13:30,399][__main__][INFO] - Finish!!

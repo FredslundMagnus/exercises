@@ -1,0 +1,12 @@
+dataset_path: '~/datasets'
+model_name: 'trained_model.pt'
+orig_img: 'orig_data.png'
+reconstructions_img: 'reconstructions.png'
+generated_sample_img: 'generated_sample.png'
+batch_size: 100
+x_dim : 784
+hidden_dim: 400
+latent_dim: 20
+lr: 0.001
+epochs: 5
+seed: 0
