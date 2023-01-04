@@ -50,7 +50,7 @@ def train(lr, epochs):
             history[epoch] += loss.detach().numpy()
         val[epoch] = accuracy(model, test_data, test_label)
         print(epoch, history[epoch], val[epoch])
-    torch.save(model, join("S1", "trained_model.pt"))
+    torch.save(model, "trained_model.pt")
     plt.plot(history)
     plt.show()
     
@@ -62,7 +62,7 @@ def evaluate(model_checkpoint):
     print("Evaluating until hitting the ceiling")
     print(model_checkpoint)
 
-    model = torch.load(join("S1", model_checkpoint))
+    model = torch.load(model_checkpoint)
     _, __, test_data, test_label = mnist()
     print(f"Accuracy: {accuracy(model, test_data, test_label):%}")
 
