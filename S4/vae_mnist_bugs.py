@@ -20,7 +20,7 @@ x_dim  = 784
 hidden_dim = 400
 latent_dim = 20
 lr = 1e-3
-epochs = 20
+epochs = 4
 
 
 # Data loading
