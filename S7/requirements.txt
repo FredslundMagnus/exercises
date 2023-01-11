@@ -1,0 +1,6 @@
+opencv-python
+requests
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
