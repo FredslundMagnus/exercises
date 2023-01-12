@@ -1,0 +1,1 @@
+torchserve --start --ncs --model-store model_store --models my_fancy_model=my_fancy_model.mar
