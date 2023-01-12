@@ -1,0 +1,100 @@
+2023-01-12T15:33:23,103 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-01-12T15:33:23,103 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-01-12T15:33:23,968 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-01-12T15:33:23,968 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-01-12T15:33:24,891 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.0
+TS Home: C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages
+Current directory: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7
+Temp directory: C:\Users\magnu\AppData\Local\Temp
+Metrics config path: C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 4
+Max heap size: 2016 M
+Python executable: C:\Users\magnu\anaconda3\envs\mlops02\python.exe
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\model_store
+Initial Models: N/A
+Log dir: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\logs
+Metrics dir: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\model_store
+Model config: N/A
+2023-01-12T15:33:24,891 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.0
+TS Home: C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages
+Current directory: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7
+Temp directory: C:\Users\magnu\AppData\Local\Temp
+Metrics config path: C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 4
+Max heap size: 2016 M
+Python executable: C:\Users\magnu\anaconda3\envs\mlops02\python.exe
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\model_store
+Initial Models: N/A
+Log dir: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\logs
+Metrics dir: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\magnu\Documents\dtu\MLOps\exercises\S7\model_store
+Model config: N/A
+2023-01-12T15:33:24,933 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2023-01-12T15:33:24,933 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2023-01-12T15:33:25,738 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2023-01-12T15:33:25,738 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2023-01-12T15:33:25,738 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2023-01-12T15:33:25,738 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2023-01-12T15:33:25,748 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2023-01-12T15:33:25,748 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2023-01-12T15:33:25,764 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2023-01-12T15:33:25,764 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2023-01-12T15:33:25,784 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2023-01-12T15:33:25,784 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2023-01-12T15:33:27,658 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages\ts\metrics\metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2023-01-12T15:33:27,658 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages\ts\metrics\metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\magnu\anaconda3\envs\mlops02\Lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2023-01-12T15:33:38,218 [INFO ] nioEventLoopGroup-3-1 ACCESS_LOG - /127.0.0.1:56525 "GET /version?timeout=5s HTTP/1.1" 404 8
+2023-01-12T15:33:38,221 [INFO ] nioEventLoopGroup-3-1 TS_METRICS - Requests4XX.Count:1|#Level:Host|#hostname:Magnus-Fredslund,timestamp:1673534018
